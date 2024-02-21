@@ -41,7 +41,6 @@
 
     </LinearLayout>
 
-
     <!-- Linear layout for Pressure Visualization -->
     <LinearLayout
         android:id="@+id/pressureLayout"
@@ -49,7 +48,18 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_below="@id/relativeLayoutProfile"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LineChart for the Pressure distribution"
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textStyle="bold" />
 
         <!-- Pressure Chart -->
         <com.github.mikephil.charting.charts.LineChart

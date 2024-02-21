@@ -21,7 +21,6 @@
             android:layout_height="wrap_content"
             android:text="heading of the notification"
             android:textSize="20sp"
-            android:padding="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp" />
@@ -31,7 +30,6 @@
             android:id="@+id/tvDateTime"
             android:text="Date/ time"
             android:textSize="20sp"
-            android:padding="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp" />
@@ -43,11 +41,9 @@
         android:id="@+id/tvNotification"
         android:text="notification message"
         android:textSize="20dp"
-        android:padding="8dp"
-        android:layout_marginTop="16dp"
+
+        android:layout_marginTop="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp" />
-
-
 
 </LinearLayout>

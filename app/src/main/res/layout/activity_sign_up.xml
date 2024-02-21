@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".LoginActivity">
+    tools:context=".SignUpActivity">
 
     <ImageView
         android:layout_width="match_parent"
@@ -21,7 +21,16 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:id="@+id/txtEmail"
+        android:id="@+id/txtUsername"
+        android:hint="user name"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/txtEmailSignUp"
         android:layout_marginRight="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
@@ -30,17 +39,26 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:id="@+id/textPassword"
+        android:id="@+id/txtPassSignUp"
         android:layout_marginRight="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:hint="password" />
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/txtConfirmPass"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="confirm password" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnLogin"
-        android:text="Login"
+        android:id="@+id/btnSignUp"
+        android:text="Sign Up"
         android:textSize="20dp"
         android:layout_marginTop="16dp"
         android:layout_marginRight="16dp"
@@ -49,8 +67,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tvCreateAccount"
-        android:text="Don't have an account? Create now!"
+        android:id="@+id/tvLogin"
+        android:text="Already have an account? Login!"
         android:textSize="20dp"
         android:layout_marginTop="16dp"
         android:layout_marginRight="16dp"

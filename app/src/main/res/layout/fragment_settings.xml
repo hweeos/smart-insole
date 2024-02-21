@@ -8,17 +8,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp"
-        android:layout_margin="16dp" >
+        android:padding="8dp"
+        android:layout_margin="8dp" >
 
         <!-- Threshold Settings -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Threshold Settings"
-            android:textSize="18sp"
+            android:text="Thresholds"
+            android:textSize="20sp"
             android:textStyle="bold"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="8dp" />
         <!-- Pressure Threshold -->
         <EditText
             android:id="@+id/editTextPressureThreshold"
@@ -26,7 +26,7 @@
             android:layout_height="48dp"
             android:hint="Enter Pressure Threshold"
             android:inputType="numberDecimal"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="8dp" />
 
         <!-- Temperature Threshold -->
         <EditText
@@ -38,30 +38,49 @@
             android:layout_marginTop="16dp" />
     </LinearLayout>
 
-    <LinearLayout
+        <!-- Notification Settings -->
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp"
-        android:layout_margin="16dp">
+        android:text="Notifications"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp" />
 
-        <!-- Notification Settings -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Notification Settings"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginTop="16dp" />
+    <!-- Push Notification Toggle -->
+    <Switch
+        android:id="@+id/switchPushNotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Enable Push Notifications"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"/>
 
-        <!-- Push Notification Toggle -->
-        <Switch
-            android:id="@+id/switchPushNotifications"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:text="Enable Push Notifications"
-            android:layout_marginTop="16dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp" />
 
-    </LinearLayout>
+    <Switch
+        android:id="@+id/switchBluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Enable bluetooth"
+        android:textSize="20dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"/>
+
+
 
 </LinearLayout>
