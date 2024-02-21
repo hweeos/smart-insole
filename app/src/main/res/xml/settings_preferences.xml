@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- EditTextPreference for Pressure Threshold -->
+    <EditTextPreference
+        android:key="editTextPressureThreshold"
+        android:title="Pressure Threshold"
+        android:summary="Enter pressure threshold"
+        android:inputType="numberDecimal" />
+
+    <!-- EditTextPreference for Temperature Threshold -->
+    <EditTextPreference
+        android:key="editTextTemperatureThreshold"
+        android:title="Temperature Threshold"
+        android:summary="Enter temperature threshold"
+        android:inputType="numberDecimal" />
+
+    <!-- SwitchPreference for Push Notifications -->
+    <SwitchPreferenceCompat
+        android:key="switchPushNotifications"
+        android:title="Push Notifications"
+        android:summary="Enable/disable push notifications" />
+
+</PreferenceScreen>

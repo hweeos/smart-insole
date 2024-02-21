@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textViewHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Smart Insole"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/relativeLayoutProfile"
+        android:layout_below="@+id/textViewHeading"
+        android:layout_marginTop="16dp">
+
+        <!-- Image of a person -->
+        <ImageView
+            android:id="@+id/imageViewPerson"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/baseline_person_24"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"  />
+
+        <TextView
+            android:id="@+id/textViewUserProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome, John Doe"
+            android:textSize="18sp"
+            android:layout_below="@id/textViewHeading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"/>
+
+    </LinearLayout>
+
+
+    <!-- Linear layout for Pressure Visualization -->
+    <LinearLayout
+        android:id="@+id/pressureLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/relativeLayoutProfile"
+        android:layout_marginTop="16dp">
+
+        <!-- Pressure Chart -->
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/pressureChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp" />
+
+
+    </LinearLayout>
+
+    <!-- Linear layout for Temperature Visualization -->
+    <LinearLayout
+        android:id="@+id/temperatureLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/pressureLayout"
+        android:layout_marginTop="16dp">
+
+        <!-- Add temperature visualization components here -->
+
+    </LinearLayout>
+
+    <!-- Linear layout for Recent Activity Feed -->
+    <LinearLayout
+        android:id="@+id/activityFeedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/temperatureLayout"
+        android:layout_marginTop="16dp">
+
+        <!-- Add recent activity feed components here -->
+
+    </LinearLayout>
+
+</RelativeLayout>
