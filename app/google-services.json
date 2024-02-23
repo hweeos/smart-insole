@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "626786162912",
+    "project_id": "smart-insole-b0e53",
+    "storage_bucket": "smart-insole-b0e53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626786162912:android:f3dcbd77cf8eb47a835885",
+        "android_client_info": {
+          "package_name": "com.example.smartinsole"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpMVbQv6iVIl5gYRv8HT74hgF6tzG4Mjo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

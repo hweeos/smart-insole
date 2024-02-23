@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
@@ -17,16 +19,19 @@ import java.util.List;
 public class DashboardFragment extends Fragment {
 
     private LineChart pressureChart;
-
+    private TextView tvImageViewPerson;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
 
         pressureChart = root.findViewById(R.id.pressureChart);
+        tvImageViewPerson = root.findViewById(R.id.textViewUserProfile);
 
         // Call method to set up pressure chart
         setupPressureChart();
+
+
 
         return root;
     }

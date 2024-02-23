@@ -1,53 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="8dp"
-        android:layout_margin="8dp" >
+        android:text="Settings"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:gravity="center" />
 
-        <!-- Threshold Settings -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Thresholds"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginTop="8dp" />
-        <!-- Pressure Threshold -->
-        <EditText
-            android:id="@+id/editTextPressureThreshold"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:hint="Enter Pressure Threshold"
-            android:inputType="numberDecimal"
-            android:layout_marginTop="8dp" />
+    <!-- Search View -->
 
-        <!-- Temperature Threshold -->
-        <EditText
-            android:id="@+id/editTextTemperatureThreshold"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:hint="Enter Temperature Threshold"
-            android:inputType="numberDecimal"
-            android:layout_marginTop="16dp" />
-    </LinearLayout>
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search Settings"
+        android:iconifiedByDefault="false"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_search_view_background" />
 
-        <!-- Notification Settings -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/divider"
+        android:layout_marginTop="16dp" />
+
+    <!-- Threshold Settings -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set threshold values"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="16dp"/>
+    <!-- Pressure Threshold -->
+    <EditText
+        android:id="@+id/editTextPressureThreshold"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter Pressure Threshold"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/edittext_background"/>
+
+    <!-- Temperature Threshold -->
+    <EditText
+        android:id="@+id/editTextTemperatureThreshold"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter Temperature Threshold"
+        android:inputType="numberDecimal"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="16dp" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save changes"
+        android:textSize="20dp"
+        android:backgroundTint="@color/light_gray"
+        android:textColor="#000000"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/divider"
+        android:layout_marginTop="16dp" />
+
+
+    <!-- Notification Settings -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Notifications"
         android:textSize="20sp"
-        android:textStyle="bold"
         android:layout_marginTop="16dp"
         android:layout_marginRight="8dp"
-        android:layout_marginLeft="8dp" />
+        android:layout_marginLeft="16dp" />
 
     <!-- Push Notification Toggle -->
     <Switch
@@ -58,17 +101,23 @@
         android:textSize="20sp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginLeft="8dp"/>
+        android:layout_marginLeft="16dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/divider"
+        android:layout_marginTop="16dp"/>
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Bluetooth"
         android:textSize="20sp"
-        android:textStyle="bold"
         android:layout_marginTop="16dp"
         android:layout_marginRight="8dp"
-        android:layout_marginLeft="8dp" />
+        android:layout_marginLeft="16dp" />
 
     <Switch
         android:id="@+id/switchBluetooth"
@@ -79,8 +128,20 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginLeft="8dp"/>
+        android:layout_marginLeft="16dp"/>
 
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/divider"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit your profile settings"
+        android:textSize="20sp"
+        android:id="@+id/tvEditProfile"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp" />
 
 </LinearLayout>

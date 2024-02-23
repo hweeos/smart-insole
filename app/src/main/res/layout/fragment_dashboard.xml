@@ -15,7 +15,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="vertical"
+        android:gravity="center"
         android:id="@+id/relativeLayoutProfile"
         android:layout_below="@+id/textViewHeading"
         android:layout_marginTop="16dp">
@@ -34,10 +35,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Welcome, John Doe"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:layout_below="@id/textViewHeading"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="45dp"/>
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"/>
 
     </LinearLayout>
 
@@ -76,24 +78,26 @@
         android:id="@+id/temperatureLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_below="@id/pressureLayout"
         android:layout_marginTop="16dp">
 
         <!-- Add temperature visualization components here -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temperature reading:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp" />
 
-    </LinearLayout>
-
-    <!-- Linear layout for Recent Activity Feed -->
-    <LinearLayout
-        android:id="@+id/activityFeedLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_below="@id/temperatureLayout"
-        android:layout_marginTop="16dp">
-
-        <!-- Add recent activity feed components here -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="72 F"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp" />
 
     </LinearLayout>
 
